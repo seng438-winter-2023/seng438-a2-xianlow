@@ -541,6 +541,10 @@ public class RangeTest {
 	
 	@After
 	public void tearDown() throws Exception {
+		range = null;
+		range1 = null;
+		range2 = null;
+		expandedRange = null;
 	}
 	
 	@AfterClass
