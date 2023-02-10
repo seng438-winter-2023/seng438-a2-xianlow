@@ -539,6 +539,24 @@ public class RangeTest {
 		assertEquals(expandedRange, expectedRange);
 	}
 	
+	//testing expandToInclude(Range, double) when value is equal to lower
+	@Test 
+	public void expandToIncludeWhenValueEqualToLower() {
+		range = new Range(0, 10);
+		expandedRange = Range.expandToInclude(range, 0);
+		Range expectedRange = new Range(0, 10);
+		assertEquals(expandedRange, expectedRange);
+	}
+	
+	//testing expandToInclude(Range, double) when value is equal to upper
+	@Test 
+	public void expandToIncludeWhenValueEqualToUpper() {
+		range = new Range(0, 10);
+		expandedRange = Range.expandToInclude(range, 10);
+		Range expectedRange = new Range(0, 10);
+		assertEquals(expandedRange, expectedRange);
+	}
+	
 	@After
 	public void tearDown() throws Exception {
 		range = null;
