@@ -12,6 +12,7 @@ import org.junit.Test;
 public class createNumberArrayTest extends DataUtilities {
 	Number realVals[] = new Number[4];
 	@Before
+	//Setup all values needed to test the Numbers array at the end 
 	public void setUp() {
 		realVals[0] = 1.0;
 		realVals[1] = 2.0;
@@ -28,11 +29,12 @@ public class createNumberArrayTest extends DataUtilities {
 		values[1] = 2.0;
 		values[2] = 3.0;
 		values[3] = 4.0;
+		//Setup values to send into the function that is being tested
 	    Number result[] = DataUtilities.createNumberArray(values);
-	    System.out.println(realVals[3]);
+	    //Should have made result into a number array with the values above
 	     // verify
 	     
-	     
+	    //Tests if the array have equal values
 	    assertArrayEquals(realVals, result);
 	     // tear-down: NONE in this test method
 	 }

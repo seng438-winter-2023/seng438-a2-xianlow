@@ -12,6 +12,7 @@ import org.junit.Test;
 public class createNumberArray2DTest extends DataUtilities {
 	Number realVals[][] = new Number[2][4];
 	@Before
+	//Setup all values that is needed to test at the end
 	public void setUp() {
 		realVals[0][0] = 1.0;
 		realVals[0][1] = 2.0;
@@ -37,10 +38,12 @@ public class createNumberArray2DTest extends DataUtilities {
 		values[1][1] = 6.0;
 		values[1][2] = 7.0;
 		values[1][3] = 8.0;
+		//Setup all values as a 2D double array to feed into the function being tested
 	    Number result[][] = DataUtilities.createNumberArray2D(values);
+	    //Usage of the function is question and should have made a 2D array of Numbers
 	     // verify
 	     
-	    
+	    //Checks if all the values are the same
 	    assertArrayEquals(realVals, result);
 	     // tear-down: NONE in this test method
 	 }

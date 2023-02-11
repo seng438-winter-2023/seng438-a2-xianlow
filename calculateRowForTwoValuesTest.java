@@ -14,7 +14,8 @@ public class calculateRowForTwoValuesTest extends DataUtilities {
     final Values2D values = mockingContext.mock(Values2D.class);
 	@Before
 	public void setUp() {
-		
+		//There will be two columns and first value of column 1 is 10.5 and 
+		//for column 2 will be 5.5
 	     mockingContext.checking((ExpectationBuilder) new Expectations() {
 	         {
 	             one(values).getColumnCount();
@@ -31,10 +32,11 @@ public class calculateRowForTwoValuesTest extends DataUtilities {
 	 @Test
 	 public void calculateRowForTwoValues() {
 	     // exercise	
+		//Usage of the function with values stated above and using only row zero
 	     double result = DataUtilities.calculateRowTotal(values, 0);
 	     // verify
 	     
-	     
+	   //The result should equal 16.0 since 10.5 + 5.5 = 16.0
 	     assertEquals(16.0, result, .000000001d);
 	     // tear-down: NONE in this test method
 	 }
