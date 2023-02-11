@@ -475,4 +475,6 @@ Although, committing the test files to the root of the repository and manually p
 
 # 6 Comments/feedback on the lab itself
 
-Text…
+The lab description was indeed detailed and did not have any ambiguities. However, we felt it excessively descriptive and detailed. Step by step instructions take over too much content and either a gif file or separate link would have been better. However, since the lab was sectioned and structured very well we were still able to jump between contents with little effort, on the second and next iterations of readings.
+
+The example samples of **Junit** and **Jmock** provided were great! It allowed to quickly comprehend the setup and usage of eclipse. This allowed all of our team members to have understood the bigger picture after reading the lab description.
