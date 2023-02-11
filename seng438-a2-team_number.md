@@ -2,12 +2,12 @@
 
 **Lab. Report \#2 – Requirements-Based Test Generation**
 
-| Group 1:      |
-| -------------- |
-| Xian Wei Low |
-| Abdul Moeiz               | 
-| Akashdeep Singh               |
-| Cale Morash               | 
+| Group: 1      |
+|-----------------|
+| Xian Wei Low    30113016           |   
+| Akashdeep Singh 30128444           |   
+| Abdul Moeiz 30113088               |   
+| Cale Morash 30066719               |  
 
 # 1 Introduction
 
