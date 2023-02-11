@@ -6,7 +6,7 @@
 | -------------- |
 | Xian Wei Low |
 | Abdul Moeiz               | 
-|                |
+| Akashdeep Singh               |
 |                | 
 
 # 1 Introduction
@@ -465,11 +465,13 @@ All constrain(double) test cases used range.lower = 0 and range.upper = 10
 
 # 4 How the team work/effort was divided and managed
 
-In our team, we evenly spread the functions out to each member and worked on the test cases individually. Then we save our progress inside the Github and checked each others work at the end.
+In our team, we evenly spread the functions out to each member and worked on the test cases individually. Then we save our progress inside the Github and checked each others work at the end. Xian and Akashdeep tested on **DataUtilities** class functions, whereas Abdul and Cale tested on **Range** class. After each subgroup compared each others test files, we re-tested and checked the other group's test files, to ensure thorough testing was performed.
 
 # 5 Difficulties encountered, challenges overcome, and lessons learned
 
-Text…
+During the familiarization step we found setting up **eclipse** to be a smooth process. While eclipse is a great IDE for itself the style of making import was not quite natural and intuitive compared to other popular editors or IDE, such as VScode. One issue faced that made the process of committing less flawless is how saving files imported to a _workspace_ in eclipse does not save them to the original location it was imported from. We did indeed look up on the documentation but we later deciced to manually copy paste the files to the original place, before commiting. While it is true that we could have also commited the workspace on the repository, we do not think that is a good idea as some search paths of files and folders depende on each user's device.
+
+Although, committing the test files to the root of the repository and manually pulling and importing them to eclipse, still made the overall teamwork managable. The lesson we learned is how we can still mantain teamwork by following simple rules, even if there are complications in using a different framework.
 
 # 6 Comments/feedback on the lab itself
 
