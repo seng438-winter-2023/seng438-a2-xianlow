@@ -7,7 +7,7 @@
 | Xian Wei Low |
 | Abdul Moeiz               | 
 | Akashdeep Singh               |
-|                | 
+| Cale Morash               | 
 
 # 1 Introduction
 
@@ -18,12 +18,7 @@ Within this lab, we will be using the knowledge gained from class of JUnit to te
 Our test strategy is to firstly, choose whichever functions we wanted for range. Once we get those functions, we will look over the javadocs given to us to review what each functions needs to work. If they require other functions to work, we will be using mocking so we can bypass any errors that those other functions may have. If no functions are needed, then values will be hard coded by the developer to test the functionality of the function in question. This means that if only a double value is needed, we will feed the value straight into the function itself. Once the test case is developed, we check if the test case has failed or not by running as a JUnit test case.
 
 # 3 Test cases developed
-
-Text…
-
-// write down the name of the test methods and classes. Organize the based on
-the source code method // they test. identify which tests cover which partitions
-you have explained in the test strategy section //above
+Here a detailed report of test methods and classes. 
 
 **DataUtilites Class**
 * calculateColumnTotalForTwoValuesTest
@@ -469,7 +464,7 @@ In our team, we evenly spread the functions out to each member and worked on the
 
 # 5 Difficulties encountered, challenges overcome, and lessons learned
 
-During the familiarization step we found setting up **eclipse** to be a smooth process. While eclipse is a great IDE for itself the style of making import was not quite natural and intuitive compared to other popular editors or IDE, such as VScode. One issue faced that made the process of committing less flawless is how saving files imported to a _workspace_ in eclipse does not save them to the original location it was imported from. We did indeed look up on the documentation but we later deciced to manually copy paste the files to the original place, before commiting. While it is true that we could have also commited the workspace on the repository, we do not think that is a good idea as some search paths of files and folders depende on each user's device.
+During the familiarization step we found setting up **eclipse** to be not a very smooth process. While eclipse is a great IDE for itself the style of making import was not quite natural and intuitive compared to other popular editors or IDE, such as VScode. One issue faced that made the process of committing less flawless is how saving files imported to a _workspace_ in eclipse does not save them to the original location it was imported from. We did indeed look up on the documentation but we later deciced to manually copy paste the files to the original place, before commiting. While it is true that we could have also commited the workspace on the repository, we do not think that is a good idea as some search paths of files and folders depende on each user's device.
 
 Although, committing the test files to the root of the repository and manually pulling and importing them to eclipse, still made the overall teamwork managable. The lesson we learned is how we can still mantain teamwork by following simple rules, even if there are complications in using a different framework.
 
