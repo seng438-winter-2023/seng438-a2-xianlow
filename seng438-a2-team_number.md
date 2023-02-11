@@ -3,11 +3,11 @@
 **Lab. Report \#2 – Requirements-Based Test Generation**
 
 | Group \#:      | 1    |
-| -------------- | --- |
-| Student Names: |     |
-| Abdul Moeiz               |     |
-|                |     |
-|                |     |
+| -------------- | 
+| Xian Wei Low |     
+| Abdul Moeiz               |     
+|                |     
+|                |     
 
 # 1 Introduction
 
