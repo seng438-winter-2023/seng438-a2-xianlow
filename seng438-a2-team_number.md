@@ -2,20 +2,20 @@
 
 **Lab. Report \#2 – Requirements-Based Test Generation**
 
-| Group \#:      | 1    |
-| -------------- | 
-| Xian Wei Low |     
-| Abdul Moeiz               |     
-|                |     
-|                |     
+| Group 1:      |
+| -------------- |
+| Xian Wei Low |
+| Abdul Moeiz               | 
+|                |
+|                | 
 
 # 1 Introduction
 
-Text…
+Within this lab, we will be using the knowledge gained from class of JUnit to test out JFreeChart. Our objective is to focus on making 10 total JUnit test cases for the Range class and DataUtilities class. There are a total of 15 tests in Range class and only 5 for DataUtilties so we will be choosing 5 out of the 15 in Range class. The goal for this lab is to get used to JUnit testing and using mocking whenever to get desired values so we can test specfic functions without relying on other functions. 
 
 # 2 Detailed description of unit test strategy
 
-// including the input partitions you have designed
+Our test strategy is to firstly, choose whichever functions we wanted for range. Once we get those functions, we will look over the javadocs given to us to review what each functions needs to work. If they require other functions to work, we will be using mocking so we can bypass any errors that those other functions may have. If no functions are needed, then values will be hard coded by the developer to test the functionality of the function in question. This means that if only a double value is needed, we will feed the value straight into the function itself. Once the test case is developed, we check if the test case has failed or not by running as a JUnit test case.
 
 # 3 Test cases developed
 
@@ -25,6 +25,49 @@ Text…
 the source code method // they test. identify which tests cover which partitions
 you have explained in the test strategy section //above
 
+**DataUtilites Class**
+* calculateColumnTotalForTwoValuesTest
+  * setUp()
+   * Use mocking for rowCount, row1, and row2
+  * calculateColumnTotalForTwoValues()
+   * Input: rowCount = 2, row1 = 10.5, row2 = 5.5
+   * Test if it equals 16
+
+* calculateRowForTwoValuesTest
+  * setUp()
+   * Use mocking for columnCount, column1, and column2
+  * calculateRowForTwoValues()
+   * Input: columnCount = 2, column1 = 10.5, column2 = 5.5
+   * Test if it equals 16
+   
+* createNumberArrayTest
+  * setUp()
+   * Use to setup for realVals Number array
+  * createNumberArray()
+   * Input: realVals[0] = 1.0, realVals[1] = 2.0, realVals[2] = 3.0, realVals[3] = 4.0
+   *        values[0] = 1.0, values[1] = 2.0, values[2] = 3.0, values[3] = 4.0
+   * values will be a double array to be passed onto the createNumberArray in DataUtilities class.
+   * Test if the two arrays have the same values 
+   
+* createNumberArray2DTest
+  * setUp()
+   * Use to setup for realVals Number array
+  * create2DNumberArray()
+   * Input: realVals[0][0] = 1.0, realVals[0][1] = 2.0, realVals[0][2] = 3.0, realVals[0][3] = 4.0,
+            realVals[1][0] = 5.0, realVals[1][1] = 6.0, realVals[1][2] = 7.0, realVals[1][3] = 8.0
+            values[0][0] = 1.0, values[0][1] = 2.0, values[0][2] = 3.0, values[0][3] = 4.0,
+            values[1][0] = 5.0, values[1][1] = 6.0, values[1][2] = 7.0, values[1][3] = 8.0
+   * values will be a double array to be passed onto the createNumberArray2D in DataUtilities class.
+   * Test if the two arrays have the same values 
+
+* getCumulativePercentagesTest
+  * setUp()
+   * Use to setup for testValues as a DefaultKeyedValues
+  * getCumulativePercentages()
+   * Input: testValues will have three values inside. key 0 will hold 5.0, key 1 will hold 9.0 and key 2 will hold 2.0.
+   * testValues will be a DefaultKeyedValues and will be passed into getCumulativePercentages that is located inside the DataUtilities class.
+   * Test if the values are correct. More specifically, first assert will check if the formula (5 / 16) = 0.3125 occured. Next assert will check if ((5 + 9) / 16) =        0.875 occured. Last assert will check if ((5 + 9) / 16) = 1.0 has occured.
+   
 **Range Class**
  
 **Range(double, double):**
@@ -422,7 +465,7 @@ All constrain(double) test cases used range.lower = 0 and range.upper = 10
 
 # 4 How the team work/effort was divided and managed
 
-Text...
+In our team, we evenly spread the functions out to each member and worked on the test cases individually. Then we save our progress inside the Github and checked each others work at the end.
 
 # 5 Difficulties encountered, challenges overcome, and lessons learned
 
